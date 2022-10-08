@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./CSS/portovilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+            <img src="./logo/lgo-por.png" alt="logo">
+         </a>
+         <nav>
+             <ul>
+                 <li><a class="active" href="#who-am-i">who_am_i</a></li>
+                 <li><a href="#skills">skills</a></li>
+                 <li><a href="#my-work">my_work</a></li>
+                 <li><a href="#contact">Contact</a></li>
+             </ul>
+         </nav>
+        </div>
+    </header>
+    <!--  -->
+    <section class="landing">
+        <div class="containrs">
+            <div class="text">
+                <h1>i'm Mustafa Nabil</h1>
+                <p>wlecome to my website to share with you work&experiences</p>
+            </div>
+            <div class="image">
+                <img src="./backgr/back9.png" alt="">
+            </div>
+        </div>
+    </section>
+<!--  -->
+<section class="skills" id="skills">
+    <h2>my-skills</h2>
+        <div class="content">
+            <div class="card" id="my-work">
+                <div class="icon">
+                    <img src="./icon/code-solid.svg" alt="">
+                </div>
+                <div class="info">
+                    <label onclick="cliced()">website design</label>
+                    <img id="img2" style="display: none; width: 300px; height: 100px;" src="./img/website.png" alt="">
+                    <p>now i can worked on template</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./icon/cyber security.svg" alt="">
+                </div>
+                <div class="info">
+                    <h3>cyber security</h3>
+                    <p>i want to learn the field of cyber security in the near future</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./icon/data_entry.svg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="data-entry">data entry</h4>
+                    <p>i previously worked data entry as a freelancing</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./icon/graphic design.svg" alt="">
+                </div>
+                <div class="info">
+                    <label onclick="clicded()">graphic design</label>
+                    <img id="img" style="display: none; width: 300px; height: 100px;" src="./img/logo.png" alt="">
+                    <p>now i can worked on logo_card_GIF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="who-am-i" class="abuot-me">
+    <h2>abuot-me</h2>
+<button id="bto" onclick="clicde()">SEE MORE</button>
+    <p id="pra"><br> i'm Mustafa Nabil, i'm 20 years, work in freelancing,
+         i started my programming studies two years ago with graphic design
+        this is all about me</p>
+</section>
+
+<footer id="contact">
+    <div class="text-info">
+        <h2>Contact</h2>
+    </div>
+    <div class="logo-icon">
+            <img src="./logo/logo-por.svg" alt="">
+        </div>
+        <div class="header2">
+            <ul>
+            <li><a class="acion" href="#who-am-i">who_am_i</a></li>
+            <li><a class="acion" href="#skills">skills</a></li>
+            <li><a class="acion" href="#my-work">my_work</a></li>
+            <li><a class="acion" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="img-icon">
+        <a href="https://www.instagram.com/mustafa.navil/?utm_source=qr" target="_blank"><img src="./icon/icons8-instagram.svg" alt=""></a>
+        <a href="https://t.me/967734248922" target="_blank"><img src="./icon/telegram.svg" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=100081680869365" target="_blank"><img src="./icon/facebook.svg" alt=""></a>
+        <a href="https://wa.me/qr/EAPZOHKE6452G1" target="_blank"><img src="./icon/icons8-whatsapp (1).svg" alt=""></a>
+            </div>
+            <div class="text-p">
+                <p>&copy; all rights to <span>mustafa design</span> <br>
+                
+                </p>
+            </div>
+    </footer>
+</body>
+<script>
+function clicde() {
+    if(pra==1) {
+        document.getElementById("pra").style.display="inline"
+        return pra=0;
+    }else{
+        document.getElementById("pra").style.display="none"
+        return pra=1;
+    }
+}
+function clicded() {
+    if(img==1) {
+        document.getElementById("img").style.display="inline"
+        return img=0;
+    }else{
+        document.getElementById("img").style.display="none"
+        return img=1;
+    }
+}
+function cliced() {
+    if(img2==1) {
+        document.getElementById("img2").style.display="inline"
+        return img2=0;
+    }else{
+        document.getElementById("img2").style.display="none"
+        return img2=1;
+    }
+}
+</script>
+</html>
